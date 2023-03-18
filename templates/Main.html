@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset = "UTF-8">
+	<meta name="viewport"
+	content = "width=device-width, initial-scale = 1.0">
+	<title>Music Classifier</title>
+	<link rel = "stylesheet" href = "/static/style.css">
+</head>
+
+
+<body>
+	<!-- Navigation Bar -->
+	<nav class="navbar">
+    <div class="navbar__container">
+        <a href="index.html#home" id="navbar__logo">Music Classifier</a>
+        <div class="navbar__toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+			<ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href={{ url_for('home') }} class="navbar__links" id="home-page">Home</a>
+                </li>
+
+				<li class="navbar__item">
+                    <a href={{ url_for('statistics') }} class="navbar__links" id="stat-page">Statistics</a>
+                </li>
+				
+				<li class="navbar__item">
+                    <a href={{ url_for('cnn') }} class="navbar__links" id="cnn-page">CNN</a>
+                </li>
+                
+				<script src="/static/app.js"></script> 
+            </ul>
+        </div>
+    </nav>
+	<!--Slideshow-->
+	
+	</div>
+	</div>
+
+	
+	
+	
+	<!--MySummary Section-->
+    <!--Test Section-->
+    <div class="project" id="project">
+        <div class="project__container">
+            <div class="project__content"  style="background: rgba(256, 256, 256, .1);">
+                <h3></h3>
+                <p class = "text">
+					This model is built to identify the genre of music.
+					
+					The dataset used for these models is the GTZAN dataset.  The two models used are Naive Bayes and CNN.
+					For the Naive Bayes, we used the .csv file that contains numerous statistical features.
+					
+					
+					
+                </p>
+                
+            </div>
+        </div>
+    </div>
+	
+</body>
+</html>
+
